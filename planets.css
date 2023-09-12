@@ -1,0 +1,117 @@
+body {
+    background-image: linear-gradient(to bottom right, black, darkblue);
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.container {
+    margin: auto;
+    max-width: 960px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+header,
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header h1,
+footer p {
+    margin: 0;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #008CBA;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.register {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.login a,
+.register a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
