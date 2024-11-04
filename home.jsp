@@ -4,7 +4,6 @@
 <head>
     <title>Adastra</title>
     <link rel="stylesheet" type="text/css" href="../cssDir/home.css">
-    <!-- Add a title and a stylesheet to the page -->
 </head>
 
 <body>
