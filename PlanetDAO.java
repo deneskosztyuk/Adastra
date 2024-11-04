@@ -52,7 +52,7 @@ public class PlanetDAO {
         return allPlanets;
     }
 
-    // This method adds a new planet to the database
+    // adds a new planet to the database
     public void addPlanet(String name, String type, int price, long distance_from_earth_km, int number_of_moons, double mass_kg, double size_diameter_km, int surface_temperature_celsius, double orbital_period_days) {
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement sqlStatement = connection.prepareStatement("INSERT INTO planets (name, type, price, distance_from_earth_km, number_of_moons, mass_kg, size_diameter_km, surface_temperature_celsius, orbital_period_days) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
@@ -68,7 +68,7 @@ public class PlanetDAO {
             sqlStatement.setInt(8, surface_temperature_celsius);
             sqlStatement.setDouble(9, orbital_period_days);
 
-            // Execute the prepared statement to add the new planet to the database
+            // add the new planet to the database
             sqlStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
